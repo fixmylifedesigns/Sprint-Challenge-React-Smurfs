@@ -4,8 +4,17 @@ import "./App.css";
 import SmurfForm from "./components/SmurfForm";
 import Smurfs from "./components/Smurfs";
 import axios from "axios";
-// import styled from 'styled-components'
+import styled from 'styled-components'
 // import {NavLink, Route} from 'react-router-dom'
+
+const Application = styled.div`
+background:url(https://cafart.r.worldssl.net/images/Category_12502/subcat_39178/SmurfDayAdj.jpg);
+background-position:center;
+background-repeat:no-repeat;
+background-size: cover;
+height:100vh;
+display:flex;
+`
 
 class App extends Component {
   constructor(props) {
@@ -39,10 +48,10 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <Application className="App">
         <SmurfForm addSmurf={this.addSmurf} smurfs={this.state.smurfs} />
         <Smurfs smurfs={this.state.smurfs} />
-      </div>
+      </Application>
     );
   }
 }
