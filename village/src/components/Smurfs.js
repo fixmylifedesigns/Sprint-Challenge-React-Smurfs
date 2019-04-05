@@ -5,7 +5,6 @@ import Smurf from './Smurf';
 const ContainerDiv = styled.div`
 /* width:800px; */
 margin:0 auto;
-border:solid;
 display:flex;
 flex-direction:column;
 `
